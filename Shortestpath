@@ -1,0 +1,21 @@
+-For this shortest path  problem, a solution has been designed which combines A* algorithm with brute force to solve the problem and find an optimal path.
+
+-As Dijkstra algorithm  could  not to take turn factor into account it was avoided.Hence A* function was used.
+
+-The reason behind the use of brute force is that the number of vertices(precisely 12) to cover are less. So the amount if calculations are less and can be performed by the computer.
+
+-The Networkx library used to create the graphs and the A* function.
+
+-The A* algorithm was used to find the shortest path between the initial position(here x=1 ,y=1) and all other vertices.From the shortest path the end point was used as the source for the next iteration.
+
+-As there is a requirement to minimize number of turns .A* algorithm included the heuristic function which minimized the turns taken.
+
+-The coordinates are turned to numbers for ease of calculation. This has been shown in the output graph.
+
+-Final path nodes in order of travesal
+[0,19,39,32,14,61,75,91,113,142,137,175]
+
+-Final path edges
+[(0, 9), (9, 18), (18, 19), (19, 28), (28, 37), (37, 38), (38, 39), (39, 30), (30, 31), (31, 32), (32, 23), (23, 14), (14, 23), (23, 32), (32, 41), (41, 50), (50, 59), (59, 60), (60, 61), (61, 70), (70, 79), (79, 78), (78, 77), (77, 76), (76, 75), (75, 84), (84, 93), (93, 92), (92, 91), (91, 100), (100, 109), (109, 110), (110, 111), (111, 112), (112, 113), (113, 122), (122, 131), (131, 140), (140, 141), (141, 142), (142, 141), (141, 140), (140, 139), (139, 138), (138, 137), (137, 146), (146, 155), (155, 164), (164, 173), (173, 174), (174, 175)]   
+
+
